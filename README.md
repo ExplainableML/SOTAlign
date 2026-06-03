@@ -21,7 +21,9 @@ SOTAlign is a two-step method for the alignment of pretrained unimodal image and
 
 ## Code
 
-Coming soon.
+We provide an implementation of the [KLOT](src/klot.py) divergence. SOTAlign leverages KLOT to compare the optimal transport plans induced by the learned space affinity matrix $K$ and the teacher space affinity matrix $K^*$. Our implementation follows the explicit gradient derived in Theorem 5.1 of the paper. This formulation avoids backpropagation through Sinkhorn iterations and thus makes the OT-based divergence more memory and runtime efficient.
+
+The full code will be released soon.
 
 ## Citation
 If you find SOTAlign useful, please star this repository and cite our work:
